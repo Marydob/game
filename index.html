@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#0b0716" />
+    <title>yumy.io — Игры Чёрной дыры</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <!-- Контейнер для 3D-сцены (canvas создаёт Three.js) -->
+    <div id="game"></div>
+
+    <!-- HUD: заготовка, наполним на этапе 6 -->
+    <div id="hud">
+      <div id="hud-left">
+        <div id="timer" class="pill pill-dark">02:00</div>
+        <div id="kills" class="pill pill-dark pill-small">Убийств: 0</div>
+      </div>
+      <div id="hud-right">
+        <ul id="leaderboard"></ul>
+      </div>
+    </div>
+
+    <!-- Слой для стрелок-индикаторов соперников за экраном (этап 6) -->
+    <div id="indicators"></div>
+
+    <!-- Оверлей загрузки / меню (этап 6) -->
+    <div id="overlay" class="hidden"></div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
